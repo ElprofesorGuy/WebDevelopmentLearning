@@ -11,7 +11,7 @@ body{
 form{
     box-shadow: 0.5px 0.5px 3px rgb(21, 16, 41);
     width:25%;
-    padding:10px 15px 20px 15px;
+    padding: 30px;
     border-radius: 5px;
 }
 .title{
@@ -57,9 +57,19 @@ label{
 #accept{
     border:none;
 }
-#submit-button{
+#terms{
+    width:15px;
+    height:15px;
+    outline:none;
+}
+.submit-button{
     border:solid 1px black;
     background-color: black;
     color:white;
     margin:10px 0 20px 0;
+    height:30px;
+    border-radius: 5px;;
+}
+.submit-button:hover{
+    cursor:pointer;
 }
