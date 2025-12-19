@@ -1,0 +1,33 @@
+.signUp-form{
+    width:25%;
+}
+.form-header{
+    margin-bottom:50px;
+}
+.logIn-options{
+    display:flex;
+    width:100%;
+    justify-content: space-between;
+}
+
+.logIn{
+    border:none;
+    padding:10px 30px;
+    color:white;
+    background-color: red;
+    font-weight:bolder;
+    border-radius: 5px;
+}
+.logIn:hover{
+    background-color: white;
+    color:red;
+    cursor:pointer;
+    border:solid 1px red;
+}
+.forgot-password-link{
+    color:red;
+    text-decoration:none;
+}
+.forgot-password-link:hover{
+    cursor:pointer;
+}

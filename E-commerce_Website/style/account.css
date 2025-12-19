@@ -1,0 +1,155 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.headPage{
+    background-color: black;
+    color:white;
+    display: flex;
+    justify-content: space-around;
+    width:100%;
+    padding:20px 0;
+}
+.headPage-description{
+    width:70%;
+    text-align:center;
+}
+.shopLink{
+    color:white;
+    font-weight: bold;
+}
+header{
+    display:grid;
+    grid-template-columns: 30% 40% 30%;
+    align-items:center;
+    margin-bottom:10px;
+    border:solid 1px gray;
+}
+.exclusive{
+    font-size:2em;
+    font-weight:bolder;
+    text-align:center;
+}
+.linkOptions{
+    list-style: none;
+    display:flex;
+    justify-content: space-between;
+    
+}
+
+.search-bar{
+    text-align:center;
+    background:rgb(226, 225, 225);
+    opacity:0.5;
+    border-radius:5px;
+    margin:auto;
+    padding:5px 15px;
+    width:60%;
+    display:flex;
+    justify-content:space-between;
+}
+section{
+    margin:30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.page{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.home{
+    color:silver;
+    font-weight: bold;
+}
+.myAccount, .welcome{
+    color:black;
+}
+.profilName{
+    color:red;
+}
+.content{
+    display:flex;
+    justify-content:space-around;
+}
+.pageOptions{
+    margin-top:50px;
+    width:30%;
+}
+ul{
+    list-style: none;
+    margin-left:32px;
+    margin-bottom:16px;
+    color:silver;
+    line-height: 1.5;
+    
+}
+.first-option, .second-option, .third-option{
+    color:black;
+    font-weight:bold;
+    margin-bottom:16px;
+}
+.edit-form{
+    border:solid 1px silver;
+    margin-top:50px;
+    width:50%;
+    /*padding:30px 60px;*/
+    border-radius:5px;
+    box-shadow: 1px 1px 0.5px rgb(63, 63, 63);
+}
+
+.edit{
+    color:red;
+    font-weight: bold;
+    margin-bottom:20px;
+}
+input{
+    padding:10px;
+    border-radius:5px;
+    border:none;
+    outline:none;
+    background-color: beige;
+}
+.personal-info{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width:100%;
+    
+}
+
+#current-password, #new-password, #confirm-password{
+    width:100%;
+}
+.fields{
+    width:50%;
+}
+/*form{
+    border:solid 1px skyblue;
+}
+
+.personal-info{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.fields{
+    width:50%;
+    margin-bottom:16px;
+}
+input{
+    margin-top:5px;
+    padding:10px;
+    border:none;
+    outline:none;
+    border-radius:5px;
+    background-color: rgb(221, 220, 220);
+    width:calc(100% - 115px)
+}
+#first-name, #last-name, #email, #address{
+    width:70%;
+}
+#current-password, #new-password, #confirm-password{
+    margin:5px 0;
+}

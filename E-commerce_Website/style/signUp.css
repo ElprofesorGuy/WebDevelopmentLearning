@@ -1,0 +1,131 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.headPage{
+    background-color: black;
+    color:white;
+    display: flex;
+    justify-content: space-around;
+    width:100%;
+    padding:20px 0;
+}
+.headPage-description{
+    width:70%;
+    text-align:center;
+}
+.shopLink{
+    color:white;
+    font-weight: bold;
+}
+header{
+    display:grid;
+    grid-template-columns: 30% 40% 30%;
+    align-items:center;
+    margin-bottom:10px;
+    border:solid 1px gray;
+    /*display:grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    align-items:center;
+    margin-bottom:10px;
+    border:solid 1px gray;*/
+}
+.exclusive{
+    font-size:2em;
+    font-weight:bolder;
+    text-align:center;
+}
+.linkOptions{
+    list-style: none;
+    display:flex;
+    justify-content: space-between;
+    
+}
+
+.search-bar{
+    text-align:center;
+    background:rgb(226, 225, 225);
+    opacity:0.5;
+    border-radius:5px;
+    margin:auto;
+    padding:5px 15px;
+    width:60%;
+    display:flex;
+    justify-content:space-between;
+}
+
+.signUp-section{
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+    gap:50px;
+    margin-top:50px;
+    height:450px;
+}
+.signUp-image{
+    width:40%;
+    height:100%;
+}
+img{
+    width:100%;
+    height:100%;
+}
+.signUp-form{
+    line-height: 1.5;
+    width:40%;
+}
+.form-header{
+    margin-bottom:20px;
+}
+form{
+    width:100%;
+}
+input{
+    width:100%;
+    outline:none;
+    border:none;
+    border-top:solid 2px gray;
+}
+#username:focus,#email-or-phone-number:focus,#password:focus{
+    border-top:none;
+    border-bottom:solid 2px red;
+}
+#password{
+    margin-bottom:12px;
+}
+#submit{
+    outline:none;
+    border:none;
+    padding:10px;
+    background-color: red;
+    color:white;
+    font-weight: bold;
+    margin-bottom:10px;
+}
+#submit:hover{
+    cursor:pointer;
+    background-color: darkred;
+}
+.signUp-google{
+    outline:none;
+    text-align:center;
+    padding:10px;
+    border:solid 1px black;
+    font-weight: bold;
+    width:100%
+}
+.signUp-google:hover{
+    cursor:pointer;
+    background-color: lightgray;
+}
+.logIn-link{
+    margin-top:15px;
+    text-align:center;
+    width:100%;
+}
+.logIn-link a{
+    color:blue;
+    font-weight: bold;
+}
