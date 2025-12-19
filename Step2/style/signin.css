@@ -136,9 +136,6 @@ span{
     }
 }
 @media (max-width:600px){
-    body{
-        background-color:#1E90FF;
-    }
     .form-header h1{
         text-align:center
     }
