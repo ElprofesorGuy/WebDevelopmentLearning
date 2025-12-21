@@ -1,0 +1,63 @@
+
+form{
+    border:solid 1px skyblue;
+}
+
+.personal-info{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.fields{
+    width:50%;
+    margin-bottom:16px;
+}
+input{
+    margin-top:5px;
+    padding:10px;
+    border:none;
+    outline:none;
+    border-radius:5px;
+    background-color: rgb(221, 220, 220);
+    width:calc(100% - 115px)
+}
+#first-name, #last-name, #email, #address{
+    width:70%;
+}
+#current-password, #new-password, #confirm-password{
+    margin:5px 0;
+}
+/*.edit-form{
+    border:solid 1px silver;
+    margin-top:50px;
+    width:50%;
+    border-radius:5px;
+    box-shadow: 1px 1px 0.5px rgb(63, 63, 63);
+}
+
+.edit{
+    color:red;
+    font-weight: bold;
+    margin-bottom:20px;
+}
+input{
+    padding:10px;
+    border-radius:5px;
+    border:none;
+    outline:none;
+    background-color: beige;
+}
+.personal-info{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width:100%;
+    
+}
+
+#current-password, #new-password, #confirm-password{
+    width:100%;
+}
+.fields{
+    width:50%;
+}*/

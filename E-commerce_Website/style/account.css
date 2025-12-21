@@ -90,66 +90,58 @@ ul{
     font-weight:bold;
     margin-bottom:16px;
 }
-.edit-form{
-    border:solid 1px silver;
-    margin-top:50px;
-    width:50%;
-    /*padding:30px 60px;*/
-    border-radius:5px;
-    box-shadow: 1px 1px 0.5px rgb(63, 63, 63);
-}
 
+.edit-form{
+    background:skyblue;
+    box-shadow: 1px 1px 1px darkblue;
+    margin-top:50px;
+    border-radius:5px;
+    padding:30px;
+    width:40%;
+}
 .edit{
     color:red;
+    margin-bottom: 10px;
+}
+input{
+    margin:5px 0 15px 0;
+    padding:10px;
+    border-radius:5px;
+    border:none;
+    outline:none;
+    width:100%;
+}
+.personal-info{
+    display:flex;
+    justify-content: space-between;
+    width:100%;
+    flex-wrap:wrap;
+}
+.buttons{
+    text-align:right;
+}
+button{
+    padding:10px;
+}
+.cancel{
+    border:transparent;
+    border-radius:5px;
+    background-color:none;
+    color:black;
+}
+.save{
+    border:none;
+    border-radius:5px;
+    background-color: brown;
+    color:white;
     font-weight: bold;
-    margin-bottom:20px;
+    width:30%;
 }
-input{
-    padding:10px;
-    border-radius:5px;
-    border:none;
-    outline:none;
-    background-color: beige;
-}
-.personal-info{
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width:100%;
+
+
+
+
     
-}
 
-#current-password, #new-password, #confirm-password{
-    width:100%;
-}
-.fields{
-    width:50%;
-}
-/*form{
-    border:solid 1px skyblue;
-}
 
-.personal-info{
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-.fields{
-    width:50%;
-    margin-bottom:16px;
-}
-input{
-    margin-top:5px;
-    padding:10px;
-    border:none;
-    outline:none;
-    border-radius:5px;
-    background-color: rgb(221, 220, 220);
-    width:calc(100% - 115px)
-}
-#first-name, #last-name, #email, #address{
-    width:70%;
-}
-#current-password, #new-password, #confirm-password{
-    margin:5px 0;
-}
+
