@@ -1,0 +1,135 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.headPage{
+    background-color: black;
+    color:white;
+    display: flex;
+    justify-content: space-around;
+    width:100%;
+    padding:20px 0;
+}
+.headPage-description{
+    width:70%;
+    text-align:center;
+}
+.shopLink{
+    color:white;
+    font-weight: bold;
+}
+header{
+    display:grid;
+    grid-template-columns: 30% 40% 30%;
+    align-items:center;
+    margin-bottom:10px;
+    border:solid 1px gray;
+}
+.exclusive{
+    font-size:2em;
+    font-weight:bolder;
+    text-align:center;
+}
+.linkOptions{
+    list-style: none;
+    display:flex;
+    justify-content: space-between;
+    
+}
+
+.search-bar{
+    text-align:center;
+    background:rgb(226, 225, 225);
+    opacity:0.5;
+    border-radius:5px;
+    margin:auto;
+    padding:5px 15px;
+    width:60%;
+    display:flex;
+    justify-content:space-between;
+}
+.contact-section{
+    margin:30px 110px;
+}
+.form-contact{
+    display:flex;
+    width:100%;
+    justify-content: space-between;
+    
+    margin-top:70px;
+}
+.contacts{
+    border-radius:5px;
+    box-shadow: 2px 1px 5px black;
+    width:25%;
+    padding:20px;
+}
+.contact-header, .message-header{
+    display:flex;
+    justify-content: space-between;
+    width:55%;
+    align-items:center;
+    margin-bottom:12px;
+}
+.phone-div, .message-div{
+    background-color: brown;
+    height:40px;
+    width:40px;
+    border-radius:50%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+.contact-text, .phone-number{
+    line-height: 2;
+}
+.separator{
+    border:solid 1px gray;
+    display:flex;
+    margin:auto;
+    margin:16px auto;
+}
+.formulaire{
+    width:60%;
+    border-radius:5px;
+    box-shadow: 2px 1px 5px black;
+    
+    padding:20px;
+}
+.user-info{
+    display:flex;
+    justify-content: space-between;
+}
+.user-info input{
+    padding:10px;
+    outline:none;
+    border:none;
+    border-radius:5px;
+    background-color: #f9f9f9;
+}
+textarea{
+    width:100%;
+    height:150px;
+    margin-top:10px;
+    padding:10px;
+    outline:none;
+    border:none;
+    border-radius:5px;
+    background-color: #f9f9f9;
+}
+.send-div{
+    text-align:right;
+}
+.send-button{
+    padding:10px;
+    border:none;
+    outline:none;
+    border-radius:5px;
+    background-color: brown;
+    margin-top:10px;
+    color:white;
+    font-weight:bold;
+    text-align:right;
+}
