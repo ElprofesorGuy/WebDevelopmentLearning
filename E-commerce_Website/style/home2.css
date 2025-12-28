@@ -24,8 +24,8 @@ header{
 .exclusive{
     margin:auto;
 }
-#homeLink{
-    border-bottom:solid 2px silver;
+#homeLink a{
+    border-bottom:solid 2px #f8f8f8;
 }
 .linkOptions{
     list-style:none;
@@ -33,13 +33,26 @@ header{
     justify-content: center;
     gap:30px;
 }
+.navLink a{
+    color:black;
+    text-decoration:none;
+}
+.navLink a:hover{
+    cursor:pointer;
+    font-weight: bold;
+}
 .search-bar{
     margin:auto;
     display:flex;
     gap:20px;
     border-radius:5px;
-    background-color: silver;
+    background-color: #f8f8f8;
     padding:5px 15px;
+}
+#default{
+    border:none;
+    outline:none;
+    background-color: #f8f8f8;
 }
 .products{
     display:grid;
@@ -129,6 +142,10 @@ span{
     justify-content: center;
     margin:100px auto;
     width: 80%;
+    overflow-x: hidden;
+}
+.todaySection-header{
+    width:100%;
 }
 
 .today-title{
@@ -139,24 +156,47 @@ span{
 .puce{
     width:20px;
     height: 40px;
-    background-color: brown;
+    background-color: #DB4444;
     border-radius:5px;
 }
 .todays-header{
+    width:100%;
     margin:20px 0;
+    display: flex;
+    align-items: center;
     justify-content: space-between;
+}
+.scroll-buttons{
+    display:flex;
+    gap:30px;
+    align-items: center;
+}
+.scroll-buttons div{
+    background-color: silver;
+    height:35px;
+    width:35px;
+    border-radius: 50%;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    cursor:pointer;
 }
 .todays-products, .best-products, .explore-items{
     display:flex;
-    gap:30px;
-    
-    
+    gap:30px;  
 }
+.todays-products{
+    
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
 .products-elt, .best-products-elt, .explore-item{
     height: 300px;
-    width:200px;
+    width:250px;
    
 }
+
 .product-image{
     background:#f9f9f9;
     width:100%;
@@ -177,7 +217,7 @@ span{
    position:absolute;
    top:0;
    padding:3px 10px;
-   background-color: brown;
+   background-color: #DB4444;
    border-radius:5px;
    margin:10px;
    color:white;
@@ -231,7 +271,7 @@ span{
 }
 .more-products button{
     padding:10px 35px;
-    background: brown;
+    background: #DB4444;
     color:white;
     border-radius: 5px;
     border:none;          
@@ -268,7 +308,7 @@ span{
 .viewAll{
     padding:15px 45px;
     border:none;
-    background: brown;
+    background: #DB4444;
     color:white;
     border-radius:5px;
 }
@@ -334,7 +374,7 @@ span{
     width:100%;
 }
 .explore-products{
-    margin:30px auto;
+    margin:100px auto;
     width:80%;
 }
 .explore-items{
@@ -373,7 +413,7 @@ span{
     width:20px;
     height:20px;
     border-radius:50%;
-    background-color: brown;
+    background-color: #DB4444;
     display: flex;
     align-items: center;
     justify-content: center;   
@@ -385,18 +425,188 @@ span{
     margin:30px auto;
     width:80%;
 }
+
 .featured-items{
     display:grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: 300px; 
-    gap: 15px; /* Espacement entre les images */
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
+    width:100%;
+    height:600px;
+    gap:15px;
+    margin:auto;
+    overflow: hidden;
 }
-.featured-item img{
+.grid1{
+    background: #000000;
+    height:600px;
+    position:relative;
+}
+.grid2{
+    display:grid;
+    grid-template-rows: repeat(2, 1fr);
+    gap:15px;
+    height:600px;
+}
+.grid21{
+    height:300px;
+    position:relative;
+}
+.grid22{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:15px;
+}
+.grid221{
+    position:relative;
+}
+.grid222{
+    position:relative;
+    background: #000000;
+}
+
+.featured-item-img{
+    width:100%;
+    height:100%;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+.featured-item-img img{
     width:100%;
     height:100%;
     object-fit: cover;
 }
+.featured-item-description{
+    color:white;
+    position:absolute;
+    bottom:20px;
+    left:20px;
+    line-height: 1.5;
+}
+.featured-item-description a{
+    color:white;
+    font-weight:bold;    
+    margin-top:10px;
+}
+
+.carts{
+    display:flex;
+    justify-content: space-between;
+    width:80%;
+    margin:100px auto;
+    
+}
+.cart{
+    border:solid 1px silver;
+    border-radius:5px;
+    padding:20px 10px;
+    text-align:center;
+    width:20%;
+}
+
+.icon-subcontainer{
+    background-color: silver;
+    padding:10px 0;
+    width:70px;
+    height:70px;
+    margin:auto;
+    margin-bottom:20px;
+    border-radius: 50%;
+    
+}
+.icon-container{
+    background-color: black;
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    margin:auto;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+.cart-price{
+    font-weight:bold;
+    font-size:2em;
+}
+
+.cart-icon{
+    color:white;
+    position:relative;
+    top:25%;
+}
+#selected-cart{
+    box-shadow: 1px 1px 2px silver;
+}
+footer{
+    background-color: #000000;
+}
+.footer-up{
+    width:90%;
+    margin:auto;
+    display:flex;
+    justify-content: space-between;
+    line-height: 2;
+    color:white;
+    padding:30px 0;
+}
+.send{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:5px;
+    border:solid 1px white;
+    background-color: #000000;
+    margin:10px 0;
+}
+.send input{
+    border:none;
+    outline:none;
+    background:#000000;
+    color:white;
+}
+.send img{
+    cursor:pointer;
+}
+.account-links, .quick-links{
+    display:flex;
+    flex-direction:column;
+}
+.footer-column a{
+    text-decoration:none;
+    color:white;
+}
+.download-app-links{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.group-link1 img{
+    width:80px;
+    height:80px;
+    object-fit: cover;
+}
+.group-link2{
+    display:flex;
+    flex-direction:column;
+}
+.group-link2 img{
+    width:110px;
+    height:40px;
+    object-fit: cover;
+}
+.group-social-links{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.footer-down{
+    text-align:center;
+    color:white;
+    padding: 20px 0;
+    border-top:solid 1px rgb(228, 226, 226);
+}
+
+
+
+
+
+
 
