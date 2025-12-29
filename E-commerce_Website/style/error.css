@@ -4,52 +4,6 @@
     box-sizing: border-box;
 }
 
-.headPage{
-    background-color: black;
-    color:white;
-    display: flex;
-    justify-content: space-around;
-    width:100%;
-    padding:20px 0;
-}
-.headPage-description{
-    width:70%;
-    text-align:center;
-}
-.shopLink{
-    color:white;
-    font-weight: bold;
-}
-header{
-    display:grid;
-    grid-template-columns: 20% 35% 35% 10%;
-    align-items:center;
-    margin-bottom:10px;
-    border:solid 1px gray;
-}
-.exclusive{
-    font-size:2em;
-    font-weight:bolder;
-    text-align:center;
-}
-.linkOptions{
-    list-style: none;
-    display:flex;
-    justify-content: space-between;
-    
-}
-
-.search-bar{
-    text-align:center;
-    background:rgb(226, 225, 225);
-    opacity:0.5;
-    border-radius:5px;
-    margin:auto;
-    padding:5px 15px;
-    width:50%;
-    display:flex;
-    justify-content:space-between;
-}
 .othrs-icons{
     display:flex;
     justify-content: center;
@@ -68,6 +22,7 @@ header{
 }
 .page-contain{
     text-align:center;
+    margin-bottom:100px;
     
 }
 .error-title{

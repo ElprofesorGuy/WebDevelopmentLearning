@@ -3,56 +3,9 @@
     padding:0;
     box-sizing: border-box;
 }
-
-.headPage{
-    background-color: black;
-    color:white;
-    display: flex;
-    justify-content: space-around;
-    width:100%;
-    padding:20px 0;
-}
-.headPage-description{
-    width:70%;
-    text-align:center;
-}
-.shopLink{
-    color:white;
-    font-weight: bold;
-}
-header{
-    display:grid;
-    grid-template-columns: 30% 40% 30%;
-    align-items:center;
-    margin-bottom:10px;
-    border:solid 1px gray;
-}
-.exclusive{
-    font-size:2em;
-    font-weight:bolder;
-    text-align:center;
-}
-.linkOptions{
-    list-style: none;
-    display:flex;
-    justify-content: space-between;
-    
-}
-
-.search-bar{
-    text-align:center;
-    background:rgb(226, 225, 225);
-    opacity:0.5;
-    border-radius:5px;
-    margin:auto;
-    padding:5px 15px;
-    width:60%;
-    display:flex;
-    justify-content:space-between;
-}
-section{
-    margin:50px 0px 0 110px;/*top right bottom left*/
-    
+.main-container-section{
+    margin-left:100px;
+    margin-top:50px;
 }
 .ourStory{
     display:flex;
@@ -76,14 +29,13 @@ section{
 .story_img{
     width:100%;
     height:100%;
+    object-fit: cover;
 }
-.carts{
+.carts, .small-carts{
     display:flex;
     justify-content: space-between;
-    width:80%;
-    margin:auto;
-    margin-top:50px;
-    margin-bottom:50px;
+    width: 90%;
+    margin:100px 0;
 }
 .cart{
     border:solid 1px silver;
@@ -122,34 +74,60 @@ section{
 #selected-cart{
     box-shadow: 1px 1px 2px silver;
 }
-.team{
+.team-member{
     display:flex;
-    width:80%;
+    width:90%;
     justify-content: space-between;
-    margin-left:110px;
-}
-.member1{
-    width:25%;
+    margin:20px 0;
 }
 .member{
     border-radius:5px;
-    border:solid 1px silver;
-    background-color: silver;
     width:300px;
     height:300px;
+    background: #f8f8f8;
 }
 .member img{
     width:100%;
     height:100%;
+    object-fit: contain;
 }
 .member-info{
-    margin-top:12px;
+    margin-top:20px;
 }
 .social-link{
     margin-top:12px;
+}
+.team-buttons{
+    display:flex;
+    gap:10px;
+    margin-top:10px;
+    justify-content: center;
+}
+.team-btn{
+    width:12px;
+    height:12px;
+    background-color: silver;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.small-carts{
+    margin:150px 0;
 }
 .item{
     padding:20px 10px;
     width:30%;
     text-align:center;
+}
+
+@media (max-width: 1115px){
+    body{
+        background-color: #DDFF44;
+    }
+    .member{
+        width:200px;
+    }
+}
+
+@media (max-width: 988px){
+    
 }

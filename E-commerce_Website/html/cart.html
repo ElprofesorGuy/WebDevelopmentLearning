@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Contact</title>
+        <title>About</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <link rel="stylesheet" href="../style/header.css">
-        <link rel="stylesheet" href="../style/contact.css">
+        <link rel="stylesheet" href="../style/about.css">
         <link rel="stylesheet" href="../style/footer.css">
+        <link rel="stylesheet" href="../style/cart.css.">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     </head>
     <body>
@@ -20,7 +21,7 @@
                 <ul class="linkOptions">
                     <li class="navLink"><a href="../index2.html">Home</a></li>
                     <li class="navLink"><a href="../html/contact.html">Contact</a></li>
-                    <li class="navLink" id="homeLink"><a href="../html/about.html">About</a></li>
+                    <li class="navLink" id="homeLink"><a href="#">About</a></li>
                     <li class="navLink"><a href="../html/signUp.html">Sign Up</a></li>
                </ul>
             </nav>
@@ -36,45 +37,30 @@
                 </div>
             </div>
         </header>
-        <section class="contact-section">
-            <p class="Home">Home / <span class="contact">Contact</span></p>
-            <div class="form-contact">
-                <div class="contacts">
-                    <div class="contact-header">
-                        <div class="phone-div"><i class="fa-regular fa-phone phone-icon"></i></div>
-                        <p>Call To Us</p>
-                    </div>               
-                    <p class="contact-text">we are available 24/7, 7 days a week</p>
-                    <p class="phone-number">Phone : +237 670656671</p>
-                    <div class="separator"></div>
-                    <div class="message-header">
-                        <div class="message-div"><i class="fa-regular fa-message" style="color:white;"></i></div>
-                        <p>Write To Us</p>
-                    </div>
-                    <p style="line-height: 1.5;">Fill out our form and we will contact you within 24hours</p>
-                    <p style="line-height: 1.5;">Email : contact@exclusive.com</p>
-                    <p>Email : support@exclusive.com</p>
-                </div>
-                <!--<div class="messages">
-                    <i class="fa-solid fa-phone-flip"></i>
-                    <p>Write To Us</p>
-                    <p>Fill out our form and we will contact with in 24hours</p>
-                    <p>Email : contact@exclusive.com</p>
-                    <p>Email : support@exclusive.com</p>
-                </div>-->
-                <div class="formulaire">
-                    <form action="">
-                        <div class="user-info">
-                            <input type="text" name="username" id="username" placeholder="Your name">
-                            <input type="email" name="user-email" id="user-email" placeholder="Your email">
-                            <input type="text" name="user-contact" id="user-contact" placeholder="Your contact">
-                        </div>
-                        <textarea name="user-message" id="user-message" rows="8"></textarea>
-                        <div class="send-div">
-                            <input type="submit" value="Send Message" class="send-button">
-                        </div>
-                    </form>
-                </div>
+        <section class="cart-section">
+            <div class="page">
+                <p class="home" style="color:silver">Home /  <span class="myAccount" style="color:black;">My Account</span></p>
+            </div>
+            <div class="list-products">
+                <table>
+                    <tr>
+                        <th class="table-head">Products</th>
+                        <th class="table-head">Price</th>
+                        <th class="table-head">Quantity</th>
+                        <th class="table-head">Subtotal</th>
+                    </tr>
+                    <tr>
+                        <td class="details-products">
+                            <img src="../images/ecranTV.png" alt="" style="width:54px; height:54px">
+                            <p class="name-product">LCD Monitor</p>
+                        </td>
+                        <td class="details-products">
+                            $650
+                        </td>
+                        <td class="details-products">1</td>
+                        <td class="details-products">$650</td>
+                    </tr>
+                </table>
             </div>
         </section>
         <footer>
