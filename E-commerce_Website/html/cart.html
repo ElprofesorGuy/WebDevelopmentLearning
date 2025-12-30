@@ -5,9 +5,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <link rel="stylesheet" href="../style/header.css">
-        <link rel="stylesheet" href="../style/about.css">
+        <link rel="stylesheet" href="../style/cart.css">
         <link rel="stylesheet" href="../style/footer.css">
-        <link rel="stylesheet" href="../style/cart.css.">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     </head>
     <body>
@@ -21,7 +20,7 @@
                 <ul class="linkOptions">
                     <li class="navLink"><a href="../index2.html">Home</a></li>
                     <li class="navLink"><a href="../html/contact.html">Contact</a></li>
-                    <li class="navLink" id="homeLink"><a href="#">About</a></li>
+                    <li class="navLink" id="homeLink"><a href="../html/about.html">About</a></li>
                     <li class="navLink"><a href="../html/signUp.html">Sign Up</a></li>
                </ul>
             </nav>
@@ -38,19 +37,49 @@
             </div>
         </header>
         <section class="cart-section">
-            <div class="page">
-                <p class="home" style="color:silver">Home /  <span class="myAccount" style="color:black;">My Account</span></p>
-            </div>
+            <p class="home" style="color:silver;">Home /  <span class="myAccount" style="color:black;">My Account</span></p>
             <div class="list-products">
-                <table>
-                    <tr>
+                <div class="table">
+                    <div class="table-row" id="first-line">
+                        <div class="table-head">
+                            <p class="table-head-product">Products</p>
+                        </div>
+                        <div class="table-head"><p class="table-head-price">Price</p></div>
+                        <div class="table-head"><p class="table-head-quantity">Quantity</p></div>
+                        <div class="table-head"><p class="table-head-subtotal">Subtotal</p></div>
+                    </div>
+                    <div class="table-row">
+                        <div class="table-details-products" id="special-one">
+                            <img src="../images/ecranTV.png" alt="" style="width:54px; height:54px">
+                            <p class="name-product">LCD Monitor</p>
+                        </div>
+                        <div class="table-details-products"><p class="price">$650</p></div>
+                        <div class="table-details-products"><input type="number" id="quantity" value="01" min="1" max="99"></div>
+                        <div class="table-details-products"><p class="total">$650</p></div>
+                    </div>
+                    <div class="table-row">
+                        <div class="table-details-products" id="special-one">
+                            <img src="../images/manette.png" alt="" style="width:54px; height:54px">
+                            <p class="name-product">LCD Monitor</p>
+                        </div>
+                        <div class="table-details-products"><p class="price">$650</p></div>
+                        <div class="table-details-products"><input type="number" id="quantity" value="01" min="1" max="99"></div>
+                        <div class="table-details-products"><p class="total">$650</p></div>
+                    </div>
+                </div>
+                <div class="table-options">
+                    <button><a href="../index2.html">Return To Shop</a></button>
+                    <button>Update Cart</button>
+                </div>
+                <!--<table>
+                    <tr style="width:200px">
                         <th class="table-head">Products</th>
                         <th class="table-head">Price</th>
                         <th class="table-head">Quantity</th>
                         <th class="table-head">Subtotal</th>
                     </tr>
                     <tr>
-                        <td class="details-products">
+                        <td class="details-products" id="special-one">
                             <img src="../images/ecranTV.png" alt="" style="width:54px; height:54px">
                             <p class="name-product">LCD Monitor</p>
                         </td>
@@ -60,7 +89,31 @@
                         <td class="details-products">1</td>
                         <td class="details-products">$650</td>
                     </tr>
-                </table>
+                </table>-->
+            </div>
+            <div class="bill">
+                <div class="coupon">
+                    <input type="text" placeholder="Coupon Code">
+                    <button>Apply Coupon</button>
+                </div>
+                <div class="bill-details">
+                    <h3 class="cart-total">Cart Total</h3>
+                    <div class="bill-detail">
+                        <p class="subtotal">Subtotal</p>
+                        <P class="subtotal-price">$1750</P>
+                    </div>
+                    <div class="bill-detail">
+                        <p class="subtotal">Shipping</p>
+                        <P class="subtotal-price">Free</P>
+                    </div>
+                    <div class="total-bill">
+                        <p>Total</p>
+                        <p>$1750</p>
+                    </div>
+                    <div class="checkout">
+                        <button>Process to Checkout</button>
+                    </div>
+                </div>
             </div>
         </section>
         <footer>
