@@ -1,0 +1,121 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+span{
+    color:red;
+}
+section{
+    width:90%; 
+    margin: 50px auto;
+}
+.home, .billing-details{
+    margin:30px 0;
+}
+.billing-form{
+    display:flex;
+    justify-content: space-between;
+    padding:10px 0;
+}
+.billing-form form label{
+    margin:10px 0;
+}
+.billing-form >form >input{
+    width:100%;
+    padding:10px;
+    border:none;
+    outline:none;
+    background: #F8F8F8;
+    margin:10px 0 40px 0;
+}
+.check input:checked{
+    accent-color: #DB4444;
+}
+.billing-more-details{
+    margin-right:50px;
+}
+.bill-item{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.item-name-img{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+.item-name-img img{
+    width:54px;
+    height:54px;
+}
+.bill-details{
+   padding:20px;
+   border-radius:5px;
+   border:solid 1px silver;
+   box-shadow: 0.5px 0.5px 5px silver;
+   width:30%;
+}
+.bill-detail, .total-bill{
+    display:flex;
+    justify-content: space-between;
+    margin:10px 0;
+    border-bottom:solid 1px silver;
+    padding-bottom:10px;
+}
+.total-bill{
+    border-bottom:none;
+}
+.payment-mode form{
+    margin-bottom:20px;
+    margin-right:50px;
+}
+.first-choice{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom:20px;
+}
+.bank-icons{
+    display:flex;
+    gap:10px;
+}
+.bank-icon{
+    width:42px;
+    height:28px;
+    object-fit: cover;
+}
+.bank-icon img{
+    width:100%;
+    height:100%;
+}
+.coupon{
+    display: flex;
+    gap:20px;
+    height:50px;
+}
+.coupon input{
+    padding:10px;
+    border-radius:5px;
+    border:solid 1px silver;
+    width:300px;
+    outline:none;
+    height:auto;
+}
+.coupon button, .place-order button{
+    padding:10px 20px;
+    border:none;
+    border-radius:5px;
+    color:white;
+    font-weight:bold;
+    background: #DB4444;
+    border:solid 1px #DB4444;
+}
+.coupon button:hover, .place-order button:hover{
+    background: #FFFFFF;
+    color: #DB4444;
+    border:solid 1px #DB4444;
+    cursor: pointer;
+}
+.place-order{
+    margin:20px 0;
+}
